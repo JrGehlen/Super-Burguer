@@ -15,5 +15,25 @@
             width: 100vw;
             background: black url('./imagens/tela-home.jpg')
             no-repeat top center;
-            background-size: cover;
+        }
+        img {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        a {
+            display: block;
+            text-align: left;
+            text-decoration: none;
+            font-weight: bolder;
+            margin-top: -5px;
+            padding: 20px;
+            background-color: darkred;
+            color: darkgray;
+            width: 100vw;
+        }
+
+        a:hover {
+            background-color: red;
+            color: white;
         }
