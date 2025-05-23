@@ -15,6 +15,11 @@
             background-size: cover;
         }
 
+        main {
+            position: relative;
+            height: 100vh;
+        }
+
         img {
             position: absolute;
             top: 19px;
@@ -36,13 +41,18 @@
         }
         #iphone {
             position: absolute;
-            top: 420px;
+            top: 430px;
             left: 50%;
-            transform: translate(-50%);
+            transform: translate(-50% -50%);
+            background-repeat: no-repeat;
             background-attachment: fixed;
         }
-        #tela{
-            top: 485px;
+        iframe#tela {
+            position: relative;
+            top: 50px;
+            left: -4px;
+            height: 350px;
+            width: 254px;
         }
         
     </style>
@@ -57,8 +67,8 @@
          <section>
                  <img src="imagens/frame-iphone.png" alt="celular-iphone" id="iphone" width="290" height="450">
          </section>
-         <section>
-                 <iframe  id="tela" src="tela.html" frameborder="0"></iframe>
+         <section id="iphone">
+                 <iframe src="tela.html" name="tela" id="tela" width="250" height="370"></iframe>
          </section>
 
     </main>
